@@ -1,0 +1,6 @@
+framework module SVCommonComponent {
+  umbrella header "SVCommonComponent.h"
+
+  export *
+  module * { export * }
+}

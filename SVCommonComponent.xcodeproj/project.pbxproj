@@ -26,6 +26,8 @@
 		A54213DC1ADBB6C800A79BB1 /* SVLog.h in Headers */ = {isa = PBXBuildFile; fileRef = A54213D61ADBB6C800A79BB1 /* SVLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A54213DD1ADBB6C800A79BB1 /* SVSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = A54213D71ADBB6C800A79BB1 /* SVSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A54213DE1ADBB6C800A79BB1 /* SVUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A54213D81ADBB6C800A79BB1 /* SVUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A54670001ADCBCC500DC5F35 /* SVSegmentedView.h in Headers */ = {isa = PBXBuildFile; fileRef = A5466FFE1ADCBCC500DC5F35 /* SVSegmentedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A54670011ADCBCC500DC5F35 /* SVSegmentedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5466FFF1ADCBCC500DC5F35 /* SVSegmentedView.m */; };
 		A546AE731ACD2CF300A748B4 /* SVMethodRunner.h in Headers */ = {isa = PBXBuildFile; fileRef = A546AE711ACD2CF300A748B4 /* SVMethodRunner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A546AE741ACD2CF300A748B4 /* SVMethodRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = A546AE721ACD2CF300A748B4 /* SVMethodRunner.m */; };
 		A5AE5C001ACD44EF0092274B /* UIViewController+PlaceHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = A5AE5BFE1ACD44EF0092274B /* UIViewController+PlaceHolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -52,6 +54,8 @@
 		A54213D61ADBB6C800A79BB1 /* SVLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVLog.h; sourceTree = "<group>"; };
 		A54213D71ADBB6C800A79BB1 /* SVSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSingleton.h; sourceTree = "<group>"; };
 		A54213D81ADBB6C800A79BB1 /* SVUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVUtils.h; sourceTree = "<group>"; };
+		A5466FFE1ADCBCC500DC5F35 /* SVSegmentedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSegmentedView.h; sourceTree = "<group>"; };
+		A5466FFF1ADCBCC500DC5F35 /* SVSegmentedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVSegmentedView.m; sourceTree = "<group>"; };
 		A546AE711ACD2CF300A748B4 /* SVMethodRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVMethodRunner.h; path = methods/SVMethodRunner.h; sourceTree = "<group>"; };
 		A546AE721ACD2CF300A748B4 /* SVMethodRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVMethodRunner.m; path = methods/SVMethodRunner.m; sourceTree = "<group>"; };
 		A5AE5BFE1ACD44EF0092274B /* UIViewController+PlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PlaceHolder.h"; sourceTree = "<group>"; };
@@ -96,6 +100,15 @@
 			path = macros;
 			sourceTree = "<group>";
 		};
+		A5466FFD1ADCB8E200DC5F35 /* segment */ = {
+			isa = PBXGroup;
+			children = (
+				A5466FFE1ADCBCC500DC5F35 /* SVSegmentedView.h */,
+				A5466FFF1ADCBCC500DC5F35 /* SVSegmentedView.m */,
+			);
+			path = segment;
+			sourceTree = "<group>";
+		};
 		A546AE701ACD2C4C00A748B4 /* methods */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +137,7 @@
 		A5C305BE1AD51EAD0020CEA3 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				A5466FFD1ADCB8E200DC5F35 /* segment */,
 				A5C305BF1AD51F150020CEA3 /* statusBarNotification */,
 			);
 			path = ui;
@@ -211,6 +225,7 @@
 				A5C305C21AD51F390020CEA3 /* SVStatusBarNotification.h in Headers */,
 				A5AE5C001ACD44EF0092274B /* UIViewController+PlaceHolder.h in Headers */,
 				A5E9EB6C1ACCEDC1006BEEF2 /* SVCommonComponent.h in Headers */,
+				A54670001ADCBCC500DC5F35 /* SVSegmentedView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A54670011ADCBCC500DC5F35 /* SVSegmentedView.m in Sources */,
 				A546AE741ACD2CF300A748B4 /* SVMethodRunner.m in Sources */,
 				A5C305C31AD51F390020CEA3 /* SVStatusBarNotification.m in Sources */,
 				A5AE5C011ACD44EF0092274B /* UIViewController+PlaceHolder.m in Sources */,
